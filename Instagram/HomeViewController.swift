@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Keiko.Kurokawa. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class HomeViewController: UIViewController {
 
