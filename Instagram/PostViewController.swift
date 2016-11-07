@@ -1,22 +1,15 @@
-//
-//  PostViewController.swift
-//  Instagram
-//
-//  Created by Keiko Arita on 2016/10/14.
-//  Copyright © 2016年 Keiko.Kurokawa. All rights reserved.
-//
-
 import UIKit
 import Firebase
 import FirebaseDatabase
 import SVProgressHUD
 
 class PostViewController: UIViewController {
-
+    var image: UIImage!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
     
-    // 投稿ボタンタップ時に呼ばれるメソッド
+    // 投稿ボタンをタップしたときに呼ばれるメソッド
     @IBAction func handlePostButton(sender: AnyObject) {
         
         let postRef = FIRDatabase.database().reference().child(CommonConst.PostPATH)
@@ -42,8 +35,10 @@ class PostViewController: UIViewController {
         UIApplication.sharedApplication().keyWindow?.rootViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    // キャンセルボタンタップ時に呼ばれるメソッド
+    // キャンセルボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleCancelButton(sender: AnyObject) {
+        // 画面を閉じる
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func viewDidLoad() {

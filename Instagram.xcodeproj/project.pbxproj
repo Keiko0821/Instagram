@@ -22,6 +22,8 @@
 		E95B9F371DB08408007B2377 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95B9F361DB08408007B2377 /* SettingViewController.swift */; };
 		E9762F351DB3784D00EDFC3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9762F341DB3784D00EDFC3C /* GoogleService-Info.plist */; };
 		E9762F371DB37A4D00EDFC3C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9762F361DB37A4D00EDFC3C /* Const.swift */; };
+		E998774E1DC31BC70031E50C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E998774C1DC31BC70031E50C /* PostTableViewCell.swift */; };
+		E998774F1DC31BC70031E50C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E998774D1DC31BC70031E50C /* PostTableViewCell.xib */; };
 		E9B0DA651DB5F45700805427 /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0DA631DB5F45700805427 /* AdobeCreativeSDKCore.framework */; };
 		E9B0DA661DB5F45700805427 /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0DA641DB5F45700805427 /* AdobeCreativeSDKImage.framework */; };
 		E9B0DA681DB5F4C800805427 /* AdobeCreativeSDKCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9B0DA631DB5F45700805427 /* AdobeCreativeSDKCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -38,6 +40,7 @@
 		E9C61D661DB6009B00973930 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C61D651DB6009B00973930 /* libz.1.2.5.tbd */; };
 		E9C61D681DB6025600973930 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C61D671DB6025600973930 /* libz.tbd */; };
 		E9C61D6A1DB6026200973930 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C61D691DB6026200973930 /* libc++.tbd */; };
+		E9FCD15B1DC2523E0061A399 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FCD15A1DC2523E0061A399 /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,8 @@
 		E95B9F361DB08408007B2377 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E9762F341DB3784D00EDFC3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9762F361DB37A4D00EDFC3C /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		E998774C1DC31BC70031E50C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E998774D1DC31BC70031E50C /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		E9B0DA631DB5F45700805427 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
 		E9B0DA641DB5F45700805427 /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
 		E9C61D531DB6002700973930 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -113,6 +118,7 @@
 		E9C61D671DB6025600973930 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E9C61D691DB6026200973930 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		E9FCD1571DC1D1450061A399 /* Instagram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instagram-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9FCD15A1DC2523E0061A399 /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +232,10 @@
 				E95B9F0A1DB077DB007B2377 /* Info.plist */,
 				E9762F341DB3784D00EDFC3C /* GoogleService-Info.plist */,
 				E9762F361DB37A4D00EDFC3C /* Const.swift */,
+				E9FCD15A1DC2523E0061A399 /* PostData.swift */,
 				E9FCD1571DC1D1450061A399 /* Instagram-Bridging-Header.h */,
+				E998774C1DC31BC70031E50C /* PostTableViewCell.swift */,
+				E998774D1DC31BC70031E50C /* PostTableViewCell.xib */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -359,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95B9F091DB077DB007B2377 /* LaunchScreen.storyboard in Resources */,
+				E998774F1DC31BC70031E50C /* PostTableViewCell.xib in Resources */,
 				E9762F351DB3784D00EDFC3C /* GoogleService-Info.plist in Resources */,
 				E95B9F061DB077DB007B2377 /* Assets.xcassets in Resources */,
 				E95B9F041DB077DB007B2377 /* Main.storyboard in Resources */,
@@ -449,11 +459,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95B9F351DB083F8007B2377 /* PostViewController.swift in Sources */,
+				E9FCD15B1DC2523E0061A399 /* PostData.swift in Sources */,
 				E95B9F2F1DB08325007B2377 /* LoginViewController.swift in Sources */,
 				E95B9F011DB077DB007B2377 /* ViewController.swift in Sources */,
 				E95B9EFF1DB077DB007B2377 /* AppDelegate.swift in Sources */,
 				E95B9F331DB083E2007B2377 /* ImageSelectViewController.swift in Sources */,
 				E9762F371DB37A4D00EDFC3C /* Const.swift in Sources */,
+				E998774E1DC31BC70031E50C /* PostTableViewCell.swift in Sources */,
 				E95B9F371DB08408007B2377 /* SettingViewController.swift in Sources */,
 				E95B9F311DB083CF007B2377 /* HomeViewController.swift in Sources */,
 			);

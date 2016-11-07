@@ -22,6 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="292" y="55"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="ELd-6s-F9R">
@@ -116,21 +117,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzJ-vm-FPG">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzJ-vm-FPG">
                                 <rect key="frame" x="150" y="80" width="300" height="40"/>
                                 <state key="normal" title="ライブラリ" backgroundImage="btn"/>
                                 <connections>
                                     <action selector="handleLibraryButton:" destination="fVz-nE-Ph2" eventType="touchUpInside" id="XnQ-56-bc1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0Y-Yo-G1C">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0Y-Yo-G1C">
                                 <rect key="frame" x="150" y="130" width="300" height="40"/>
                                 <state key="normal" title="カメラ" backgroundImage="btn"/>
                                 <connections>
                                     <action selector="handleCameraButton:" destination="fVz-nE-Ph2" eventType="touchUpInside" id="4Fq-Rg-RTJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKz-qW-Le4">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKz-qW-Le4">
                                 <rect key="frame" x="150" y="180" width="300" height="40"/>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
                                 <connections>
@@ -223,12 +224,27 @@
                     <view key="view" contentMode="scaleToFill" id="KHl-aY-JWk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m0z-7Z-7JD">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m0z-7Z-7JD" firstAttribute="leading" secondItem="KHl-aY-JWk" secondAttribute="leadingMargin" id="Vs5-vM-hFC"/>
+                            <constraint firstItem="m0z-7Z-7JD" firstAttribute="bottom" secondItem="MuB-Iw-BdF" secondAttribute="top" id="WyM-Vt-KJG"/>
+                            <constraint firstItem="m0z-7Z-7JD" firstAttribute="top" secondItem="53P-di-9en" secondAttribute="bottom" id="riN-AD-Oxx"/>
+                            <constraint firstItem="m0z-7Z-7JD" firstAttribute="trailing" secondItem="KHl-aY-JWk" secondAttribute="trailingMargin" id="wfz-kn-EKg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="m0z-7Z-7JD" id="2cv-wa-TPb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWF-6W-Blv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="718"/>
+            <point key="canvasLocation" x="292" y="718"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="Rgt-jZ-d0J">
@@ -295,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9I7-tH-Wbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="1361"/>
+            <point key="canvasLocation" x="297" y="1361"/>
         </scene>
     </scenes>
     <resources>
